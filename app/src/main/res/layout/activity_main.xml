@@ -17,7 +17,7 @@
         android:src="@drawable/quiz_logo" />
 
     <Button
-        android:id="@+id/startButton"
+        android:id="@+id/selectQuizButton"
         android:layout_width="215dp"
         android:layout_height="96dp"
         android:layout_below="@id/logoImageView"
@@ -25,7 +25,22 @@
         android:layout_marginTop="46dp"
         android:background="@drawable/button_background"
         android:padding="12dp"
-        android:text="START"
+        android:text="Select Quiz"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#3F51B5"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/randomQuizButton"
+        android:layout_width="215dp"
+        android:layout_height="96dp"
+        android:layout_below="@id/selectQuizButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_background"
+        android:padding="12dp"
+        android:text="Random Quiz"
         android:textColor="#FFFFFF"
         android:textColorHighlight="#3F51B5"
         android:textSize="18sp"
@@ -35,7 +50,7 @@
         android:id="@+id/smallImageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/startButton"
+        android:layout_below="@id/randomQuizButton"
         android:layout_marginTop="-1dp"
         android:src="@drawable/small_image" /> <!-- Replace with your drawable resource -->
 

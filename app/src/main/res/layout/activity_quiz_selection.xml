@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".QuizSelectionActivity">
+
+    <TextView
+        android:id="@+id/selectQuizTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:text="Select a Quiz"
+        android:textColor="#49405A"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-medium"
+        android:shadowColor="#000000"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="3"/>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="80dp"
+        android:layout_height="2dp"
+        android:layout_below="@id/selectQuizTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="#443D51" />
+
+    <ListView
+        android:id="@+id/quizListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/divider"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="10dp"
+        android:padding="10dp"
+        android:scrollbars="none"
+        android:background="@drawable/listview_bg"
+        android:elevation="4dp"/>
+
+</RelativeLayout>

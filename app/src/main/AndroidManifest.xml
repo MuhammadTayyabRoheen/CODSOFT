@@ -23,6 +23,7 @@
         </activity>
         <activity android:name=".QuizActivity" />
         <activity android:name=".ResultActivity" />
+        <activity android:name=".QuizSelectionActivity" /> <!-- Added QuizSelectionActivity -->
     </application>
 
 </manifest>

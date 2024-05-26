@@ -11,9 +11,17 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val startButton: Button = findViewById(R.id.startButton)
-        startButton.setOnClickListener {
+        val selectQuizButton: Button = findViewById(R.id.selectQuizButton)
+        val randomQuizButton: Button = findViewById(R.id.randomQuizButton)
+
+        selectQuizButton.setOnClickListener {
+            val intent = Intent(this, QuizSelectionActivity::class.java)
+            startActivity(intent)
+        }
+
+        randomQuizButton.setOnClickListener {
             val intent = Intent(this, QuizActivity::class.java)
+            intent.putExtra("QUIZ_INDEX", -1) // -1 indicates a random quiz
             startActivity(intent)
         }
     }
